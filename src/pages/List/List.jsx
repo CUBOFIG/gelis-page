@@ -52,7 +52,11 @@ const List = () => {
       <InfoSec>
         <div>
           {data.map((e, index) => (
-            <h1 key={index}>{e}</h1>
+            <div>
+              <a href={e} key={index}>
+                {e}
+              </a>
+            </div>
           ))}
           <button
             onClick={exportFile}>Export to Excel</button>

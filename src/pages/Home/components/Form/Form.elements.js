@@ -8,3 +8,5 @@ export const FieldComponent = styled(Field)`
       outline: none;
   }
 `
+export const FooterLinks = styled.a`
+`

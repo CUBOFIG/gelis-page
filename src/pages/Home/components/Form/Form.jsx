@@ -58,9 +58,15 @@ const Form = () => {
             ENVIAR
           </button>
           <div className="social-container">
-            <FontAwesomeIcon icon={faTwitter} size="2x" className="margin-l3" />
-            <FontAwesomeIcon icon={faTwitch} size="2x" className="margin-l3" />
-            <FontAwesomeIcon icon={faInstagram} size="2x" className="margin-l3" />
+            <a href="https://twitter.com/gelisgelita" className="margin-l3" >
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+            <a href="https://www.twitch.tv/gelisgelita" className="margin-l3" >
+              <FontAwesomeIcon icon={faTwitch} size="2x" />
+            </a>
+            <a href="https://www.instagram.com/gelisgelita/" className="margin-l3" >
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
           </div>
         </div>
         <ErrorMessage name="link" component="p" className="error" />
