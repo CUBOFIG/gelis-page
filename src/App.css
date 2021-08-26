@@ -41,6 +41,10 @@ body {
   padding-left: 50px;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .navtext {
   color: #7A59AC !important;
   font-size: 35px;
@@ -128,6 +132,10 @@ body {
 
 .error{
   color: rgb(87, 16, 16) !important;
+}
+
+.errorContainer {
+  height: 20px;
 }
 
 .container___wave{

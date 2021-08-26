@@ -4,7 +4,9 @@ import { Formik, Form as Formk, ErrorMessage } from 'formik';
 import { initialValues, FormSchema } from './FormSchema'
 import { FieldComponent } from './Form.elements'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExclamation } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTwitch, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { div } from 'prelude-ls';
 
 const Form = () => {
 
@@ -69,7 +71,14 @@ const Form = () => {
             </a>
           </div>
         </div>
-        <ErrorMessage name="link" component="p" className="error" />
+        <div className="errorContainer mt-2">
+          <ErrorMessage name="link" render={msg => (
+            <div className="error">
+              <FontAwesomeIcon icon={faExclamation} size="sm" className="mr-2" />
+              {msg}
+            </div>
+          )} />
+        </div>
       </Formk>
     </Formik>
   )
